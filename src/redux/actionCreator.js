@@ -35,8 +35,6 @@ export const moonreverCollator = moonrivers => ({
 
 export const fetchMoonRever =() => {
     return dispatch => {
-
-        // axios.get('https://moonbeam.brightlystake.com/api/moonriver/getDailyBlockCount/0xa61d329de684235f7235427a422f8ce7c5e8294a')
         axios.get('https://moonbeam.brightlystake.com/api/moonriver/getCollatorDetails')
             .then(response => response.data)
             // .then(collators => console.log(collators))

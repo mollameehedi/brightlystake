@@ -9,7 +9,7 @@ const Body = () => {
     <Switch>
       <Route path="/" exact component={Delegator} />
       <Route path="/moonbeam" exact component={Moonbeam} />
-      <Route path="/individual/:id" exact component={Individual} />
+      <Route path="/moonbeam/:id" exact component={Individual} />
       <Redirect to='/' />
     </Switch>
   );

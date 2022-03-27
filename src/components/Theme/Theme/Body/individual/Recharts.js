@@ -51,9 +51,11 @@ export default class Recharts extends PureComponent {
   constructor(props){
     super(props)
     this.state = {
-      individual:'',
-      blocks:[],
-    }
+      opacity: {
+        uv: 1,
+        pv: 1,
+      },
+    };
 }
 
   render() {
@@ -64,19 +66,19 @@ export default class Recharts extends PureComponent {
         <AreaChart
           width={500}
           height={400}
-          data={data}
+          data={this.props.blocks.data}
           margin={{
-            top: 10,
+            top: 50,
             right: 30,
             left: 0,
             bottom: 0,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <CartesianGrid strokeDasharray="5 5" />
+          <XAxis dataKey="rank_blocks" />
+          <YAxis dataKey="rank_blocks" ticks={[10,20,30,40,50,60,70,80,90,100]}/>
           <Tooltip />
-          <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+          <Area type="monotone" dataKey="rank_blocks" stroke="#8884d8" fill="#8884d8" />
         </AreaChart>
       </ResponsiveContainer>
       </div>

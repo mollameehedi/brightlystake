@@ -10,10 +10,10 @@ const DeleMoonbeam = props => {
                   <Accordion.Header>
                     <ul>
                       <li className="one">{props.collator.identity}</li>
-                      <li className="two"><Link to={`/individual/${props.collator.collator}`}>{props.collator.collator}</Link></li>
+                      <li className="two"><Link to={`/moonbeam/${props.collator.collator}`}>{props.collator.collator}</Link></li>
                       <li className="three">{props.collator.delegation_amount}</li>
                        <li className="four">{props.collator.rank}</li>
-                     {/* <li className="five">{props.collator.selfStake}</li> */}
+                     <li className="five"></li>
                       <li className="six">
                         <button type='button'className="active-btn">Active</button>
                       </li>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
+import {  Link} from "react-router-dom";
 import { BiDotsHorizontalRounded } from "@react-icons/all-files/bi/BiDotsHorizontalRounded";
 
 const ResponsiveCollator = props => {
@@ -12,7 +13,7 @@ const ResponsiveCollator = props => {
                         </button></p>
               <p className="collator-p2">{props.collator.identity}</p>
               <p className="collator-p3">Collator Address</p>
-              <p className="collator-p4">{props.collator.collator}</p>
+              <p className="collator-p4"><Link  to={`/moonbeam/${props.collator.collator}`}>{props.collator.collator}</Link></p>
                     <ul className="left_content">
                       {/* <li className="one">Collator</li> */}
                       <li className="one">Counted Staked</li>

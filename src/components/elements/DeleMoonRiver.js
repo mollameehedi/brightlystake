@@ -1,5 +1,6 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
+import {  Link} from "react-router-dom";
 import { BiDotsHorizontalRounded } from "@react-icons/all-files/bi/BiDotsHorizontalRounded";
 
 const DeleMoonRiver = props => {
@@ -9,7 +10,8 @@ const DeleMoonRiver = props => {
                   <Accordion.Header>
                     <ul>
                       <li className="one">{props.moonrever.identity}</li>
-                      <li className="two">{props.moonrever.collator}</li>
+                      
+                      <li className="two"><Link  to={`/moonbeam/${props.moonrever.collator}`}>{props.moonrever.collator}</Link></li>
                       <li className="three">{props.moonrever.amount}</li>
                       <li className="four">{props.moonrever.rank}</li>
                       <li className="five">{props.moonrever.applicable_round}</li>

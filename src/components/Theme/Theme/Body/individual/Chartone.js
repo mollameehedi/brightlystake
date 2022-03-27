@@ -73,7 +73,6 @@ export default class Chartone extends PureComponent {
 
   render() {
     const { opacity } = this.state;
-console.log(this.props.blocks.data);
     return (
       <div style={{ width: '100%' }}>
         <ResponsiveContainer width="100%" height={300}>
@@ -82,19 +81,19 @@ console.log(this.props.blocks.data);
             height={300}
             data={this.props.blocks.data}
             margin={{
-              top: 5,
+              top: 20,
               right: 30,
               left: 20,
-              bottom: 5,
+              bottom: 20,
             }}
           >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
+            <XAxis dataKey="date" />
+            <YAxis dataKey="block_count" ticks={[50,100,150,200,250,300,350,400,450,500]}/>
             <Tooltip />
             <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} />
-            <Line type="monotone" dataKey="pv" strokeOpacity={opacity.pv} stroke="#8884d8" activeDot={{ r: 8 }} />
-            <Line type="monotone" dataKey="uv" strokeOpacity={opacity.uv} stroke="#82ca9d" />
+            <Line type="monotone" dataKey="block_count" strokeOpacity={opacity.pv} stroke="#8884d8" activeDot={{ r: 8 }} />
+            {/* <Line type="monotone" dataKey="block_count" strokeOpacity={opacity.uv} stroke="#82ca9d" /> */}
           </LineChart>
         </ResponsiveContainer>
       </div>

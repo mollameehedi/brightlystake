@@ -35,6 +35,7 @@ class Individual extends Component {
     this.state = {
       individual:'',
       blocks:[],
+      rankblocks:[],
     }
 }
 
@@ -54,6 +55,13 @@ class Individual extends Component {
             .then(collators => {
               this.setState({
                 blocks:collators.data,
+              })
+            })
+    axios.get(`https://moonbeam.brightlystake.com/api/moonbeam/getDelegators/${this.props.match.params.id}`)
+            .then(response => response)
+            .then(collators => {
+              this.setState({
+                rankblocks:collators.data,
               })
             })
 }
@@ -76,7 +84,7 @@ render(){
             <div className="row">
               <div className="col-lg-12 text-center">
                 <h4>
-                  <a href="#">0x0a0952e7d58817c40473d57a7e37f188ddb81ff9</a>
+                  <a href="#">{this.props.match.params.id}</a>
                 </h4>
   
                 <div className="luckyveBtn">
@@ -174,7 +182,7 @@ render(){
               </div>
               <div className="col-lg-6 col-md-6">
                 <div className="chart-number-two">
-                <Recharts/>
+                <Recharts blocks={this.state.blocks}/>
                 </div>
               </div>
             </div>
