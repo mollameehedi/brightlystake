@@ -7,10 +7,7 @@ const ResponsiveCollator = props => {
     return(
         <div>
             <Accordion.Item eventKey={props.collator.id} className='collatorres'>
-              <p className="collator-p1">colletor <button type='button'className="action-btn">
-                          Action
-                          {/* <BiDotsHorizontalRounded /> */}
-                        </button></p>
+              <p className="collator-p1">colletor <button type='button'className={(props.collator.isActive === 'Active')? 'active-btn':'inactive-btn'}>{props.collator.isActive}</button></p>
               <p className="collator-p2">{props.collator.identity}</p>
               <p className="collator-p3">Collator Address</p>
               <p className="collator-p4"><Link  to={`/moonbeam/${props.collator.collator}`}>{props.collator.collator}</Link></p>

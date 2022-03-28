@@ -33,7 +33,7 @@ class Individual extends Component {
   constructor(props){
     super(props)
     this.state = {
-      individual:'',
+      individual:[],
       blocks:[],
       rankblocks:[],
     }
@@ -66,7 +66,6 @@ class Individual extends Component {
             })
 }
 render(){
-  console.log(this.state.blocks);
     let  collators =null;
     collators = this.props.collators.map(collator => {
       return <Collator collator={collator} key={collator.id} />;
@@ -76,7 +75,7 @@ render(){
     rescollators = this.props.collators.map(collator => {
       return <ResponsiveCollator collator={collator} key={collator.id} />;
   });
-
+  console.log(this.state.individual);
     return (
       <div>
         <div id="individualBanner">
@@ -88,7 +87,7 @@ render(){
                 </h4>
   
                 <div className="luckyveBtn">
-                  <p>'luckyve'</p>
+                  <p>'{this.state.individual._identity}'</p>
                 </div>
               </div>
             </div>
@@ -119,7 +118,7 @@ render(){
               <div className="col-lg-2 col-6 col-md-4 ">
                 <div className="box">
                   <p>Total Stakedt</p>
-                  <h6>{this.state.individual_totalStake}</h6>
+                  <h6>{this.state.individual._totalStake}</h6>
                 </div>
               </div>
               <div className="col-lg-2 col-6 col-md-4">
@@ -145,26 +144,26 @@ render(){
               </div>
               <div className="col-lg-2 col-6 col-md-4">
                 <div className="box">
-                  <p>Block time</p>
-                  <h6>~{this.state.individual_totalStake} sec</h6>
+                  <p>24 Hour Blocks Count</p>
+                  <h6>~{this.state.individual._24hrs }</h6>
                 </div>
               </div>
               <div className="col-lg-2 col-6 col-md-4">
                 <div className="box">
-                  <p>UnStake Durationt</p>
-                  <h6>~ {this.state._7day}days</h6>
+                  <p>7 Days Blocks Count</p>
+                  <h6>~ {this.state.individual._7day }</h6>
                 </div>
               </div>
               <div className="col-lg-2 col-6 col-md-4">
                 <div className="box">
-                  <p>Rewards Distribution</p>
-                  <h6>~ {this.state._24hrs} hrs</h6>
+                  <p>30 Days Block Count</p>
+                  <h6>~ {this.state.individual._30day }</h6>
                 </div>
               </div>
               <div className="col-lg-2 col-12 col-md-8">
                 <div className="box">
-                  <p>Rewards Eligibility</p>
-                  <h6>Top 300 Nominators</h6>
+                  <p>Delegator Count</p>
+                  <h6>{this.state.individual._delegatorsCount }</h6>
                 </div>
               </div>
               <div className="col-lg-1"></div>

@@ -386,7 +386,7 @@ body .light {
         margin-bottom: 0px; }
         .light #moonriver .accordion-item .accordion-button ul li {
           display: inline-block;
-          width: 12%;
+          width: 13%;
           text-align: center;
           font-size: 14px;
           line-height: 26px;
@@ -396,7 +396,7 @@ body .light {
         .light #moonriver .accordion-item .accordion-button ul .four {
           color: #27E2A2; }
         .light #moonriver .accordion-item .accordion-button ul .two {
-          width: 35%; }
+          width: 45%; }
         .light #moonriver .accordion-item .accordion-button ul .six {
           width: 14%; }
       .light #moonriver .accordion-item .accordion-button::after {
@@ -973,7 +973,8 @@ body .light {
     height: 115px;
     text-align: center;
     position: relative;
-    transition: all linear 0.3s; }
+    transition: all linear 0.3s;
+    overflow: hidden; }
     .light #moonbeamBoxes .box p {
       font-weight: normal;
       font-size: 16px;
@@ -1004,11 +1005,11 @@ body .light {
       background-image: url("../images/box-hover.png");
       background-size: cover;
       background-repeat: no-repeat;
-      top: 0;
+      top: 85px;
       left: 0;
       height: 100%;
       width: 100%;
-      display: none;
+      opacity: 0;
       transition: all linear 0.3s; }
     .light #moonbeamBoxes .box:hover {
       background-color: #4F46BB; }
@@ -1026,7 +1027,9 @@ body .light {
         left: 0;
         height: 100%;
         width: 100%;
-        display: block; }
+        opacity: 1;
+        transition: all linear 0.03s, 0.3s;
+        border-radius: 20px; }
   .light #moonbeamBoxes .last-box h6 {
     font-size: 16px; }
   .light #moonbeamBoxes .second-line {
@@ -1058,14 +1061,14 @@ body .light {
     padding: 0; }
     .light #moonbeamStage .table-head ul li {
       display: inline-block;
-      width: 12%;
+      width: 13%;
       text-align: center;
       font-size: 14px;
       line-height: 26px;
       color: #262B3C;
       font-weight: normal; }
     .light #moonbeamStage .table-head ul .two {
-      width: 35%; }
+      width: 45%; }
     .light #moonbeamStage .table-head ul .six {
       width: 14%; }
   .light #moonbeamStage .accordion-item {
@@ -1086,17 +1089,18 @@ body .light {
         margin-bottom: 0px; }
         .light #moonbeamStage .accordion-item .accordion-button ul li {
           display: inline-block;
-          width: 12%;
+          width: 13%;
           text-align: center;
           font-size: 14px;
           line-height: 26px;
           color: #262B3C;
           font-weight: normal;
-          padding: 40px 0; }
+          padding: 40px 0;
+          word-break: break-all; }
         .light #moonbeamStage .accordion-item .accordion-button ul .four {
           color: #27E2A2; }
         .light #moonbeamStage .accordion-item .accordion-button ul .two {
-          width: 35%; }
+          width: 45%; }
         .light #moonbeamStage .accordion-item .accordion-button ul .six {
           width: 14%; }
       .light #moonbeamStage .accordion-item .accordion-button::after {
@@ -1210,7 +1214,7 @@ body .light {
       margin-bottom: 0px; }
       .light #moonbeamStage .accordion-body ul li {
         display: inline-block;
-        width: 23%;
+        width: 33%;
         text-align: center;
         font-size: 14px;
         line-height: 26px;
@@ -1624,7 +1628,6 @@ body .light {
 
   .light .moonbeam .collatorres .collator-p1 button,
   .light .moonriver .collatorres .collator-p1 button {
-    background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
     color: #fff; }
 
   .light #moonbeam .accordion-item,
@@ -1844,7 +1847,7 @@ body .light {
       transform: translateX(-50%); }
 
   .light #banner-part .delegatorAddress span input {
-    width: 330px;
+    width: 90%;
     height: 50px;
     font-size: 14px;
     padding: 0px 0px 0px 45px; }
@@ -1855,10 +1858,10 @@ body .light {
     left: 6%; }
 
   .light #banner-part .delegatorAddress button {
-    width: 330px;
+    width: 80%;
     height: 50px;
     font-size: 14px;
-    margin-left: 7px;
+    margin-left: 0px;
     margin-top: 15px; }
 
   .light #banner-part .delegatorAddress {
@@ -1927,13 +1930,13 @@ body .light {
     font-size: 18px; }
 
   .dark #banner-part .delegatorAddress h3 {
-    font-size: 24px; }
+    font-size: 20px; }
     .dark #banner-part .delegatorAddress h3:after {
       width: 250px;
-      left: 18%; }
+      left: 50%; }
 
   .dark #banner-part .delegatorAddress span input {
-    width: 330px;
+    width: 100%;
     height: 50px;
     font-size: 14px;
     padding: 0px 0px 0px 30px; }
@@ -1944,10 +1947,10 @@ body .light {
     left: 3%; }
 
   .dark #banner-part .delegatorAddress button {
-    width: 330px;
+    width: 80%;
     height: 50px;
     font-size: 14px;
-    margin-left: 7px;
+    margin-left: 0px;
     margin-top: 15px; }
 
   .dark #banner-part .delegatorAddress {
@@ -2073,7 +2076,7 @@ body .light {
     line-height: 27px; }
 
   .light #moonbeamStage p {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 16px; }
 
   .light #moonbeamStage .last-line {
@@ -2095,7 +2098,7 @@ body .light {
     color: #262B3C !important; }
 
   .light #individualBanner h4 a {
-    font-size: 13px;
+    font-size: 10px;
     line-height: 20px;
     font-weight: 600;
     padding: 10px 20px;
@@ -2103,7 +2106,7 @@ body .light {
     border-radius: 10px; }
 
   .dark #individualBanner h4 a {
-    font-size: 13px;
+    font-size: 10px;
     line-height: 20px;
     font-weight: 600;
     padding: 10px 20px;
@@ -2177,7 +2180,7 @@ body .light {
   .dark #moonbeamStage h2 {
     font-size: 24px; }
   .dark #moonbeamStage p {
-    font-size: 14px;
+    font-size: 10px;
     line-height: 20px; } }
 @media (min: 992px) and (max: 1200px) {
   .navbar-light .navbar-nav .nav-link {

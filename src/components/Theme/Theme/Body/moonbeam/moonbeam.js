@@ -159,7 +159,6 @@ class Moonbeam extends Component {
                   <li className="two">Collator Address</li>
                   <li className="three">Counted Staked</li>
                   <li className="four">Delegators</li>
-                  <li className="five">Self Staked</li>
                   <li className="six">Status</li>
                 </ul>
               </div>

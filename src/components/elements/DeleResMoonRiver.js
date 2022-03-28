@@ -6,10 +6,7 @@ const DeleResMoonRiver = props => {
     return(
         <div>
             <Accordion.Item eventKey={props.moonrever.id} className='collatorres'>
-              <p className="collator-p1">colletor <button type='button'className="action-btn">
-                          Action
-                          <BiDotsHorizontalRounded />
-                        </button></p>
+              <p className="collator-p1">colletor  <button type='button'className={(props.moonrever.isActive === 'Active')? 'active-btn':'inactive-btn'}>{props.moonrever.isActive}</button></p>
               <p className="collator-p2">{props.moonrever.collatorName}</p>
               <p className="collator-p3">Collator Address</p>
               <p className="collator-p4">{props.moonrever.collatorAddress}</p>

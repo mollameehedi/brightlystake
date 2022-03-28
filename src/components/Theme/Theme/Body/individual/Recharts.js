@@ -68,8 +68,8 @@ export default class Recharts extends PureComponent {
           height={400}
           data={this.props.blocks.data}
           margin={{
-            top: 50,
-            right: 30,
+            top: 0,
+            right:30,
             left: 0,
             bottom: 0,
           }}

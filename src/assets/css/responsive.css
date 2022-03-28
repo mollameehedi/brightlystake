@@ -106,7 +106,7 @@
 
 .dark .moonbeam .collatorres .left_content,
 .dark .moonriver .collatorres .left_content {
-  width: 40%;
+  width: 50%;
   float: left;
   padding-left: 0px;
 }
@@ -125,7 +125,7 @@
 
 .dark .moonbeam .collatorres .right_content,
 .dark .moonriver .collatorres .right_content {
-  width: 60%;
+  width: 50%;
   float: right;
   text-align: right;
 }
@@ -184,9 +184,9 @@
   color: #222737;
   font-weight: bold;
   font-size: 14px;
-  line-height: 26px;
-  width: 100px;
-  height: 46px;
+  line-height: 20px;
+  width: 85px;
+  height: 37px;
   background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
   border-radius: 10px;
   border: none;
@@ -245,7 +245,7 @@
   clear: both;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .disk-none {
     display: none !important;
   }
@@ -255,7 +255,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .mobile-none {
     display: none !important;
   }
@@ -276,7 +276,7 @@
 
 .light .moonbeam .collatorres .left_content,
 .light .moonriver .collatorres .left_content {
-  width: 40%;
+  width: 55%;
   float: left;
   padding-left: 0px;
 
@@ -297,7 +297,7 @@
 
 .light .moonbeam .collatorres .right_content,
 .light .moonriver .collatorres .right_content {
-  width: 60%;
+  width: 45%;
   float: right;
   text-align: right;
 }
@@ -351,18 +351,37 @@
   text-decoration: underline;
 }
 
-.light .moonbeam .collatorres .collator-p1 button,
-.light .moonriver .collatorres .collator-p1 button {
+.light .moonbeam .collatorres .collator-p1 .active-btn,
+.light .moonriver .collatorres .collator-p1 .active-btn {
   color: #222737;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   width: 100px;
+  background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
   height: 46px;
-  background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
   border-radius: 10px;
   border: none;
   float: right;
+}
+.light .moonbeam .collatorres .collator-p1 .inactive-btn,
+.light .moonriver .collatorres .collator-p1 .inactive-btn {
+  color: #222737;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  width: 80px;
+  background: linear-gradient(84.04deg, #DE0000 0%, #FF4D00 97.37%);
+  height: 37px;
+  border-radius: 10px;
+  border: none;
+  float: right;
+}
+.recharts-legend-wrapper{
+  display: none;
+}
+.recharts-text.recharts-cartesian-axis-tick-value tspan{
+  transform: skew(10deg, 10deg);
 }
 
 /* .light .moonbeam .collatorres collator-p4 */

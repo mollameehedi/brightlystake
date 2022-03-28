@@ -15,7 +15,7 @@ const MoonRever = props => {
                       <li className="four">{props.moonrever.sevenDayBlocksRank}</li>
                       <li className="five">{props.moonrever.effect}</li>
                       <li className="six">
-                        <button type='button'className="active-btn">Active</button>
+                      <button type='button'className={(props.moonrever.isActive === 'Active')? 'active-btn':'inactive-btn'}>{props.moonrever.isActive}</button>
                       </li>
                     </ul>
                   </Accordion.Header>

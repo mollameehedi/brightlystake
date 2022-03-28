@@ -15,7 +15,7 @@ const DeleMoonbeam = props => {
                        <li className="four">{props.collator.rank}</li>
                      <li className="five"></li>
                       <li className="six">
-                        <button type='button'className="active-btn">Active</button>
+                      <button type='button'className={(props.collator.isActive === 'Active')? 'active-btn':'inactive-btn'}>{props.collator.isActive}</button>
                       </li>
                     </ul>
                   </Accordion.Header>

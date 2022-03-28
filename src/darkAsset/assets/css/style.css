@@ -603,6 +603,7 @@ body .dark {
     box-sizing: border-box;
     background: linear-gradient(84.04deg, rgba(59, 20, 171, 0.15) 0%, rgba(66, 83, 225, 0.15) 97.37%);
     /* Glass */
+    overflow: hidden;
     box-shadow: 6px 8px 15px rgba(59, 61, 191, 0.05);
     backdrop-filter: blur(30px);
     /* Note: backdrop-filter has minimal browser support */
@@ -633,11 +634,11 @@ body .dark {
       background-image: url("../images/box-hover.png");
       background-size: cover;
       background-repeat: no-repeat;
-      top: 0;
+      top: 85px;
       left: 0;
       height: 100%;
       width: 100%;
-      display: none;
+      opacity: 0;
       transition: all linear 0.3s; }
     .dark #moonbeamBoxes .box:hover {
       background-color: #4F46BB; }
@@ -651,11 +652,13 @@ body .dark {
         background-image: url("../images/box-hover.png");
         background-size: cover;
         background-repeat: no-repeat;
-        top: 0;
+        top: 0px;
         left: 0;
         height: 100%;
         width: 100%;
-        display: block; }
+        opacity: 1;
+        border-radius: 20px;
+        transition: all linear 0.3s; }
   .dark #moonbeamBoxes .last-box h6 {
     font-size: 16px; }
   .dark #moonbeamBoxes .second-line {
@@ -975,14 +978,14 @@ body .dark {
     padding: 0; }
     .dark #moonbeamStage .table-head ul li {
       display: inline-block;
-      width: 12%;
+      width: 13%;
       text-align: center;
       font-size: 14px;
       line-height: 26px;
       color: #fff;
       font-weight: normal; }
     .dark #moonbeamStage .table-head ul .two {
-      width: 35%; }
+      width: 45%; }
     .dark #moonbeamStage .table-head ul .six {
       width: 14%; }
   .dark #moonbeamStage .accordion-item {
@@ -1003,17 +1006,18 @@ body .dark {
         margin-bottom: 0px; }
         .dark #moonbeamStage .accordion-item .accordion-button ul li {
           display: inline-block;
-          width: 12%;
+          width: 13%;
           text-align: center;
           font-size: 14px;
           line-height: 26px;
           color: #fff;
           font-weight: normal;
-          padding: 40px 0; }
+          padding: 40px 0;
+          word-break: break-all; }
         .dark #moonbeamStage .accordion-item .accordion-button ul .four {
           color: #27E2A2; }
         .dark #moonbeamStage .accordion-item .accordion-button ul .two {
-          width: 35%; }
+          width: 45%; }
         .dark #moonbeamStage .accordion-item .accordion-button ul .six {
           width: 14%; }
       .dark #moonbeamStage .accordion-item .accordion-button::after {
@@ -1127,7 +1131,7 @@ body .dark {
       margin-bottom: 0px; }
       .dark #moonbeamStage .accordion-body ul li {
         display: inline-block;
-        width: 23%;
+        width: 33%;
         text-align: center;
         font-size: 14px;
         line-height: 26px;

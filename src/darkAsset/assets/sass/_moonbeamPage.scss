@@ -22,6 +22,7 @@
         box-sizing: border-box;
         background: linear-gradient(84.04deg, rgba(59, 20, 171, 0.15) 0%, rgba(66, 83, 225, 0.15) 97.37%);
         /* Glass */
+        overflow: hidden;
 
         box-shadow: 6px 8px 15px rgba(59, 61, 191, 0.05);
         backdrop-filter: blur(30px);
@@ -61,11 +62,11 @@
             background-image: url("../images/box-hover.png");
             background-size: cover;
             background-repeat: no-repeat;
-            top: 0;
+            top: 85px;
             left: 0;
             height: 100%;
             width: 100%;
-            display: none;
+            opacity: 0;
             transition: all linear 0.3s;
         }
 
@@ -86,11 +87,13 @@
                 background-image: url("../images/box-hover.png");
                 background-size: cover;
                 background-repeat: no-repeat;
-                top: 0;
+                top: 0px;
                 left: 0;
                 height: 100%;
                 width: 100%;
-                display: block;
+                opacity: 1;
+                border-radius: 20px;
+                transition: all linear 0.3s;
             }
         }
     }

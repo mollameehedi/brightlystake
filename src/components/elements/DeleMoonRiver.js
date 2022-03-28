@@ -14,9 +14,8 @@ const DeleMoonRiver = props => {
                       <li className="two"><Link  to={`/moonbeam/${props.moonrever.collator}`}>{props.moonrever.collator}</Link></li>
                       <li className="three">{props.moonrever.amount}</li>
                       <li className="four">{props.moonrever.rank}</li>
-                      <li className="five">{props.moonrever.applicable_round}</li>
                       <li className="six">
-                        <button type='button'className="active-btn">Active</button>
+                      <button type='button'className={(props.moonrever.isActive === 'Active')? 'active-btn':'inactive-btn'}>{props.moonrever.isActive}</button>
                       </li>
                     </ul>
                   </Accordion.Header>

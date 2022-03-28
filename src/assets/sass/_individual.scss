@@ -122,7 +122,7 @@
         text-align: center;
         position: relative;
         transition: all linear 0.3s;
-
+        overflow: hidden;
         p {
             font-weight: normal;
             font-size: 16px;
@@ -161,11 +161,11 @@
             background-image: url("../images/box-hover.png");
             background-size: cover;
             background-repeat: no-repeat;
-            top: 0;
+            top: 85px;
             left: 0;
             height: 100%;
             width: 100%;
-            display: none;
+            opacity: 0;
             transition: all linear 0.3s;
         }
 
@@ -190,7 +190,9 @@
                 left: 0;
                 height: 100%;
                 width: 100%;
-                display: block;
+                opacity: 1;
+                transition: all linear 0.03s, 0.3s;
+                border-radius: 20px;
             }
         }
     }
@@ -246,7 +248,7 @@
 
             li {
                 display: inline-block;
-                width: 12%;
+                width: 13%;
                 text-align: center;
                 font-size: 14px;
                 line-height: 26px;
@@ -257,7 +259,7 @@
 
 
             .two {
-                width: 35%;
+                width: 45%;
             }
 
             .six {
@@ -289,13 +291,14 @@
 
                 li {
                     display: inline-block;
-                    width: 12%;
+                    width: 13%;
                     text-align: center;
                     font-size: 14px;
                     line-height: 26px;
                     color: #262B3C;
                     font-weight: normal;
                     padding: 40px 0;
+                    word-break: break-all;
                 }
 
                 .four {
@@ -304,7 +307,7 @@
 
 
                 .two {
-                    width: 35%;
+                    width: 45%;
                 }
 
                 .six {
@@ -467,7 +470,7 @@
 
             li {
                 display: inline-block;
-                width: 23%;
+                width: 33%;
                 text-align: center;
                 font-size: 14px;
                 line-height: 26px;

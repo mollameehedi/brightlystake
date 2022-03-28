@@ -447,7 +447,7 @@
 
     .light .moonbeam .collatorres .collator-p1 button,
     .light .moonriver .collatorres .collator-p1 button {
-        background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+        // background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
         color: #fff;
     }
 
@@ -736,7 +736,7 @@
     }
 
     .light #banner-part .delegatorAddress span input {
-        width: 330px;
+        width: 90%;
         height: 50px;
         font-size: 14px;
         padding: 0px 0px 0px 45px;
@@ -749,10 +749,10 @@
     }
 
     .light #banner-part .delegatorAddress button {
-        width: 330px;
+        width:80%;
         height: 50px;
         font-size: 14px;
-        margin-left: 7px;
+        margin-left: 0px;
         margin-top: 15px;
     }
 
@@ -831,16 +831,16 @@
         font-size: 18px;
     }
     .dark #banner-part .delegatorAddress h3 {
-        font-size: 24px;
+        font-size: 20px;
 
         &:after {
             width: 250px;
-            left: 18%;
+            left: 50%;
         }
     }
 
     .dark #banner-part .delegatorAddress span input {
-        width: 330px;
+        width: 100%;
         height: 50px;
         font-size: 14px;
         padding: 0px 0px 0px 30px;
@@ -853,10 +853,10 @@
     }
 
     .dark #banner-part .delegatorAddress button {
-        width: 330px;
+        width:80%;
         height: 50px;
         font-size: 14px;
-        margin-left: 7px;
+        margin-left: 0px;
         margin-top: 15px;
     }
 
@@ -1017,7 +1017,7 @@
     }
 
     .light #moonbeamStage p {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 16px;
     }
 
@@ -1046,7 +1046,7 @@
     }
 
     .light #individualBanner h4 a {
-        font-size: 13px;
+        font-size: 10px;
         line-height: 20px;
         font-weight: 600;
         padding: 10px 20px;
@@ -1055,7 +1055,7 @@
     }
 
     .dark #individualBanner h4 a {
-        font-size: 13px;
+        font-size: 10px;
         line-height: 20px;
         font-weight: 600;
         padding: 10px 20px;
@@ -1170,7 +1170,7 @@
         }
 
         p {
-            font-size: 14px;
+            font-size: 10px;
             line-height: 20px;
         }
     }

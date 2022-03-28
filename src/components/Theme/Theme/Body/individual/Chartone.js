@@ -81,10 +81,10 @@ export default class Chartone extends PureComponent {
             height={300}
             data={this.props.blocks.data}
             margin={{
-              top: 20,
-              right: 30,
-              left: 20,
-              bottom: 20,
+              top: 0,
+              right: 0,
+              left: 0,
+              bottom:0,
             }}
           >
             <CartesianGrid strokeDasharray="3 3" />
